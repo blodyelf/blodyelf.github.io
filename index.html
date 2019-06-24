@@ -7,7 +7,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../favicon.ico">
 
     <title>Blodyelf's Site</title>
 
@@ -15,13 +14,14 @@
     <link href="bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="bootstrap-3.3.7/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+  <script src="js/includeHTML.js"></script>
     <!-- Custom styles for this template -->
     <link href="css/blog.css" rel="stylesheet">
   </head>
@@ -58,170 +58,50 @@
            tara, dar avem nevoie de ajutorul dumneavoastra. Va invitam sa
            raspundeti la un scurt chestionar. <hr>
 
-           Va rugam selectati categoria de varsta din care faceti parte.
-           Acest chestionar are intrebari diferite in functie de varsta.
-           Daca sunteti adult dar nu aveti copii, va rugam raspundeti
-           intrebarilor de la "parinte".
+           Acest chestionar are intrebari diferite in functie de categoria de
+           varsta din care faceti parte. Apasati unul dintre butoanele de mai
+           jos pentru a va fi afisat chestionarul corespunzator.
            </p>
+           <!-- SURVEY SELECTION BUTTONS -->
             <a href="#P1"><button> Elev </button></a>
             <a href="#P2"><button> Student </button></a>
-            <a href="#P3"><button> Parinte </button></a>
-
+            <a href="#P3"><button> Adult </button></a>
           <hr>
         </div>
-         <!-- SURVEY SELECTION BUTTONS -->
 
-          <!-- Survey - P1 -->
-          <div class="col-md-14" id="P1">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Elev</div>
-                    <div class="panel-body">
-                        Gender:
-                        <br />
-                        <div class="btn-group" data-toggle="buttons">
-                            <label class="btn btn-default">
-                                <input type="radio" autocomplete="off" /> Male
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" autocomplete="off" /> Female
-                            </label>
-                        </div>
-                        <br />
-                        <br />
 
-                        Age Group:
-                        <br />
-                        <div class="btn-group" data-toggle="buttons">
-                            <label class="btn btn-default">
-                                <input type="radio" autocomplete="off"/>Under 18
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" autocomplete="off"/>18-25
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" autocomplete="off"/>25-50
-                            </label>
-                            <label class="btn btn-default">
-                                <input type="radio" autocomplete="off"/>Over 50
-                            </label>
-                        </div>
-                        <br />
-                        <br />
-                    </div>
-                </div>
-            </div>
-            <!-- SURVEY P1 END -->
+        <!-- Survey - P1 -->
+        <div w3-include-html="survey_elev.html"></div>
 
-            <!-- Survey - P2 -->
-            <div class="col-md-14" id="P2">
-                  <div class="panel panel-default">
-                      <div class="panel-heading">Student</div>
-                      <div class="panel-body">
-                          Gender:
-                          <br />
-                          <div class="btn-group" data-toggle="buttons">
-                              <label class="btn btn-default">
-                                  <input type="radio" autocomplete="off" /> Male
-                              </label>
-                              <label class="btn btn-default">
-                                  <input type="radio" autocomplete="off" /> Female
-                              </label>
-                          </div>
-                          <br />
-                          <br />
+        <!-- Survey - P2 -->
+        <div w3-include-html="survey_student.html"></div>
 
-                          Age Group:
-                          <br />
-                          <div class="btn-group" data-toggle="buttons">
-                              <label class="btn btn-default">
-                                  <input type="radio" autocomplete="off" />Under 18
-                              </label>
-                              <label class="btn btn-default">
-                                  <input type="radio" autocomplete="off" />18-25
-                              </label>
-                              <label class="btn btn-default">
-                                  <input type="radio" autocomplete="off" />25-50
-                              </label>
-                              <label class="btn btn-default">
-                                  <input type="radio" autocomplete="off" />Over 50
-                              </label>
-                          </div>
-                          <br />
-                          <br />
-                      </div>
-                  </div>
-              </div>
-              <!-- SURVEY P2 END -->
+        <!-- Survey - P3 -->
+        <div w3-include-html="survey_adult.html"></div>
 
-              <!-- Survey - P3 -->
-              <div class="col-md-14" id="P3">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Parinte</div>
-                        <div class="panel-body">
-                            Gender:
-                            <br />
-                            <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-default">
-                                    <input type="radio" autocomplete="off" /> Male
-                                </label>
-                                <label class="btn btn-default">
-                                    <input type="radio" autocomplete="off" /> Female
-                                </label>
-                            </div>
-                            <br />
-                            <br />
+        <!-- SUBMIT -->
 
-                            Age Group:
-                            <br />
-                            <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-default">
-                                    <input type="radio" autocomplete="off" />Under 18
-                                </label>
-                                <label class="btn btn-default">
-                                    <input type="radio" autocomplete="off" />18-25
-                                </label>
-                                <label class="btn btn-default">
-                                    <input type="radio" autocomplete="off" />25-50
-                                </label>
-                                <label class="btn btn-default">
-                                    <input type="radio" autocomplete="off" />Over 50
-                                </label>
-                            </div>
-                            <br />
-                            <br />
-                        </div>
-                    </div>
-                </div>
-                <!-- SURVEY P3 END -->
 
-                <!-- SUBMIT -->
-          <nav>
-            <ul class="pager">
-              <li><a href="index.html">Home</a></li>
-            </ul>
-          </nav>
+      </div><!-- /.blog-main -->
 
-        </div><!-- /.blog-main -->
-
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>Shortcuts</h4>
-            <ol class="list-unstyled">
-              <li><a href="#P1">Elev</a></li>
-              <li><a href="#P2">Student</a></li>
-              <li><a href="#P3">Parinte</a></li>
-            </ol>
-          </div>
-          <div class="sidebar-module">
-            <h4>Social media</h4>
-            <ol class="list-unstyled">
-              <li><a href="https://facebook.com/adiagentx">Facebook</a></li>
-              <li><a href="https://patreon.com/blodyelf">Patreon</a></li>
-              <li><a href="https://www.linkedin.com/in/adrian-pastor-907410114/">
-                LinkedIn</a></li>
-			</ol>
-          </div>
-        </div><!-- /.blog-sidebar -->
+      <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        <div class="sidebar-module sidebar-module-inset">
+          <h4>Shortcuts</h4>
+          <ol class="list-unstyled">
+            <li><a href="#P1">Elev</a></li>
+            <li><a href="#P2">Student</a></li>
+            <li><a href="#P3">Adult</a></li>
+          </ol>
+        </div>
+        <div class="sidebar-module">
+          <h4>Social media</h4>
+          <ol class="list-unstyled">
+            <li><a href="https://facebook.com/adiagentx">Facebook</a></li>
+            <li><a href="https://patreon.com/blodyelf">Patreon</a></li>
+            <li><a href="https://www.linkedin.com/in/adrian-pastor-907410114/">LinkedIn</a></li>
+          </ol>
+        </div>
+      </div><!-- /.blog-sidebar -->
 
       </div><!-- /.row -->
 
@@ -237,10 +117,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script>includeHTML();</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+    <script src="bootstrap-3.3.7/docs/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
