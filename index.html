@@ -40,19 +40,32 @@
     <div class="container">
 
       <div class="blog-header">
-        <h1 class="blog-title">Questionnaire</h1>
-        <p class="lead blog-description">Un scurt chestionar.</p>
+        <h1 class="blog-title">Studiu de piata</h1>
+        <p class="lead blog-description">Buna ziua! ....</p>
         <hr>
       </div>
 
       <div class="row">
-
         <div class="col-sm-8 blog-main">
+        <!-- SURVEY SELECTION BUTTONS -->
+        <div class="blog-post">
+           <p>
+             Va rugam selectati categoria de varsta din care faceti parte.
+             Acest chestionar are intrebari diferite in functie de varsta.
+             Daca sunteti adult dar nu aveti copii, va rugam raspundeti intrebarilor de la "parinte".
+           </p>
+            <a href="#P1"><button> Elev </button></a>
+            <a href="#P2"><button> Student </button></a>
+            <a href="#P3"><button> Parinte </button></a>
 
-          <!-- Survey - START -->
-          <div class="col-md-12">
+          <hr>
+        </div>
+         <!-- SURVEY SELECTION BUTTONS -->
+
+          <!-- Survey - P1 -->
+          <div class="col-md-14" id="P1">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Personal Info</div>
+                    <div class="panel-heading">Elev</div>
                     <div class="panel-body">
                         Gender:
                         <br />
@@ -88,8 +101,91 @@
                     </div>
                 </div>
             </div>
+            <!-- SURVEY P1 END -->
 
+            <!-- Survey - P2 -->
+            <div class="col-md-14" id="P2">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">Student</div>
+                      <div class="panel-body">
+                          Gender:
+                          <br />
+                          <div class="btn-group" data-toggle="buttons">
+                              <label class="btn btn-default">
+                                  <input type="radio" autocomplete="off" /> Male
+                              </label>
+                              <label class="btn btn-default">
+                                  <input type="radio" autocomplete="off" /> Female
+                              </label>
+                          </div>
+                          <br />
+                          <br />
 
+                          Age Group:
+                          <br />
+                          <div class="btn-group" data-toggle="buttons">
+                              <label class="btn btn-default">
+                                  <input type="radio" autocomplete="off" />Under 18
+                              </label>
+                              <label class="btn btn-default">
+                                  <input type="radio" autocomplete="off" />18-25
+                              </label>
+                              <label class="btn btn-default">
+                                  <input type="radio" autocomplete="off" />25-50
+                              </label>
+                              <label class="btn btn-default">
+                                  <input type="radio" autocomplete="off" />Over 50
+                              </label>
+                          </div>
+                          <br />
+                          <br />
+                      </div>
+                  </div>
+              </div>
+              <!-- SURVEY P2 END -->
+
+              <!-- Survey - P3 -->
+              <div class="col-md-14" id="P3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Parinte</div>
+                        <div class="panel-body">
+                            Gender:
+                            <br />
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-default">
+                                    <input type="radio" autocomplete="off" /> Male
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" autocomplete="off" /> Female
+                                </label>
+                            </div>
+                            <br />
+                            <br />
+
+                            Age Group:
+                            <br />
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-default">
+                                    <input type="radio" autocomplete="off" />Under 18
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" autocomplete="off" />18-25
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" autocomplete="off" />25-50
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" autocomplete="off" />Over 50
+                                </label>
+                            </div>
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <!-- SURVEY P3 END -->
+
+                <!-- SUBMIT -->
           <nav>
             <ul class="pager">
               <li><a href="index.html">Home</a></li>
@@ -102,7 +198,9 @@
           <div class="sidebar-module sidebar-module-inset">
             <h4>Shortcuts</h4>
             <ol class="list-unstyled">
-              <li><a href="#P1">Chestionar</a></li>
+              <li><a href="#P1">Elev</a></li>
+              <li><a href="#P2">Student</a></li>
+              <li><a href="#P3">Parinte</a></li>
             </ol>
           </div>
           <div class="sidebar-module">
